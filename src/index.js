@@ -2,7 +2,7 @@ const app = require('./app');
 const dotenv = require('dotenv');
 const mongoose = require('mongoose');
 const fs = require("fs");
-var users   =require("../models/user.js");
+const users   =require("../models/user.js");
 const users_data = JSON.parse(fs.readFileSync(`${__dirname}/../data/users.json`));
 
 
