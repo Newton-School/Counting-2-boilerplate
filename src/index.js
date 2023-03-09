@@ -10,7 +10,7 @@ const users_data = JSON.parse(fs.readFileSync(`${__dirname}/../data/users.json`)
 dotenv.config();
 
 //Connect to DB
-const url = process.env.DATABASE_URL || "mongodb://localhost/users";
+const url = process.env.DATABASE_URL || "mongodb://localhost:27017/users";
 mongoose.connect(url,{ useNewUrlParser: true, useUnifiedTopology: true }, () => {
     console.log('connected to DB')
 })
